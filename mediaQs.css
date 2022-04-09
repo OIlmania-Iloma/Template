@@ -1,0 +1,101 @@
+@media only screen and (max-width:768px) {
+    .section_a{
+        grid-template-areas: 
+        "a1"
+        "a2";
+        grid-gap: 20px;
+    }
+    
+    .intro-vid{
+        position: relative;
+        height:0;
+        width: 100%;
+        padding-bottom:56% ;
+    }
+    .intro-vid iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .section_c{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section_d{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section_e{
+        grid-template-areas: 
+        "e1"
+        "e2";
+    }
+    
+  
+    .nav-menu{
+        height: 60vh;
+        margin-top:10px ;
+        position: fixed;
+        left: -100%;
+        top:10px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        left: 0; 
+        position:relative;
+      
+    }
+    .nav-item{
+        margin: 2.5rem;
+    }
+    .hamburg{
+        display: block;
+        cursor: pointer;
+    }
+    .md-a{
+        padding: 2rem;
+        max-width: 100%;
+        font-size:3.2vw;
+        word-spacing: 0.2rem;
+        line-height:2.5rem
+    }
+    
+}
+.nav-logo {
+    height: 10em;
+    width: 10em;
+}
+
+
+.hamburg.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburg.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburg.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+@media screen and (min-width: 24.375em){
+    .legal .legal_link{
+        margin-left:auto;
+    }
+}
+@media screen and (min-width: 40.375em){
+    .footer_nav > *{
+        flex:1;
+    }
+    .footer_adress{
+        flex: 1 0px;
+    }
+    .footer_nav{
+        flex: 2 0px;
+    }
+    .cnts{
+        color: yellowgreen;
+        padding: 0.5rem;
+    }
+}
